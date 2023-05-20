@@ -12,7 +12,7 @@ function Set-UniqueName{
     Write-Output $UniqueNameOut
 }
 
-if ($ambient -eq "dev"){ #setting names for development enviroment
+if ($ambient -eq "dev"){ #setting names for DEVELOPMENT enviroment
     write-host "Enviroment: Development"
     $rgname = "RGBootcamp-Dev" #Resource Group name
     $spname = "SPBootcamp-Dev" #Service Plan name
@@ -20,7 +20,7 @@ if ($ambient -eq "dev"){ #setting names for development enviroment
     $fname =  Set-UniqueName FuncBootcamp-Dev #Function Service name
     $location = "East US" #Location of the resources
 }
-elseif ($ambient -eq "prod") { #setting names for production enviroment
+elseif ($ambient -eq "prod") { #setting names for PRODUCTION enviroment
     write-host "Enviroment: Production"
     $rgname = "RGBootcamp-Prod" #Resource Group name
     $spname = "SPBootcamp-Prod" #Service Plan name
