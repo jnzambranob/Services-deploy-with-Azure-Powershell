@@ -39,7 +39,7 @@ This version didn't have the parameter **-connected** and could be used if the s
 
 **4.** Run the script directly from PowerShell using the mandatory parameters **-ambient** (**dev** or **prod**) and **-connected** (**yes** is the only parameter acepted). Here is an **example** of the command:
 ```powershell
-.\servdeploy_noauth.ps1 -ambient dev -connected yes
+.\servdeploy_vres.ps1 -ambient dev -connected yes
 ```
 
 >Remember to open the script from the folder where the file is located. This script not could be executed from the file explorer, because it needs additional parameters for running.
